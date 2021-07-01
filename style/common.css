@@ -1,0 +1,9 @@
+html, body {margin:0; padding:0;}
+
+h1 {padding:0; margin:0; text-align:center;}
+ul {list-style:none; margin:0; padding:0;}
+li {margin:0; padding:0;}
+
+.box {padding:100px 50px;}
+.box ul>li {display:flex; gap:0 5px;}
+.box ul>li input {flex:1;}
