@@ -5,7 +5,7 @@ body {background:#f1f1f1; font-size:14px;}
 h1, h2 {padding:0; margin:0; text-align:center;}
 ul {list-style:none; margin:0; padding:0;}
 li {margin:0; padding:0;}
-input, button {border-radius:0; -webkit-appearance: none; appearance: none; }
+input, button {border-radius:0; -webkit-appearance: none; appearance: none; box-sizing:border-box;}
 
 .box {padding:100px 50px;}
 .box ul {width:100%; display:flex; gap:10px 0; flex-direction: column;}
@@ -22,7 +22,7 @@ div, section {box-sizing:border-box;}
 .wrap .container {width:100%; height:900px; display:flex; flex-direction:row; }
 .container .side {flex:20%; background:red;}
 .container .content {flex:80%; padding:20px;}
-.footer {background:#ccc; height:30px; bottom:0; position:-webkit-sticky; position:sticky;}
+.footer {background:#ccc; height:50px; bottom:0; position:-webkit-sticky; position:sticky;}
 
 
 .content, .gap1 {display:flex; flex-direction:column; gap:20px;}
@@ -39,3 +39,9 @@ table th, table td {border:1px solid #ccc; height:25px;}
 .btns {display:flex;}
 .btns>div {display:flex; gap:5px; flex:1; flex-wrap: wrap;}
 .btns>div.r {justify-content:flex-end;}
+
+input[type="text"] {width:100%; height:30px;}
+.form_list {display:table; table-layout:fixed; width:100%;}
+.form_list>li {display:table-row;}
+.form_list>li>div {display:table-cell; padding:3px;}
+.form_list>li>div.th {width:100px;}
